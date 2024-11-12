@@ -43,7 +43,7 @@ packer_compiler_rules = r'E:\Malware Detection\final-year-project\auxiliary\Yara
 
 class PEFile:
 
-    def _init_(self, filename):
+    def __init__(self, filename):
 
         binary = lief.parse(filename._str_())
 
